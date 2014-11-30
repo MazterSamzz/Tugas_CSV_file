@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Doctor Menu</title>
+
+   <!-- Bootstrap Core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/dokter.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Doctor Menu</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="../index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search Disease">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="index.html"><i class="fa fa-home"></i> Home </a>
+                        </li>
+                        <li>
+                            <a class="active" href="add_disease.html"><i class="fa fa-plus"></i> Add Disease<i class="fa fa-arrow-circle-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="view_disease.html"><i class="fa fa-eye"></i> View Disease<i class="fa fa-arrow-circle-right pull-right"></i></a>
+                        </li>
+                        <li>
+                            <a href="view_symptom.html"><i class="fa fa-eye"></i> View Symptom<i class="fa fa-arrow-circle-right pull-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!---------------------------------------------- Content ------------------------------------------------>
+        <div id="page-wrapper">
+            <div class="row">
+                <form role="form" sid="add_form" action="index.html" >
+                    <div class="form-group">
+                        <div class="huge"> <center>Form Add Disease</center> </div>
+                        <br>
+                        <label class="col-md-2 control-label">Nama Penyakit</label>
+                        <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="Nama Penyakit">
+                        </div>
+
+                        <label class="col-md-2 control-label">Deskripsi Penyakit</label>
+                        <div class="col-md-10">
+                        <textarea class="form-control" rows="4" placeholder="Deskripsi Penyakit"></textarea>
+                        </div>
+
+                        <label class="col-md-2 control-label">Gejala Penyakit</label>
+                            <!------------------- Label -------------------->   
+                            <div class="col-md-10" overflow-y:auto;>
+                                <table class="table">
+                                    <tr>
+                                        <td><input type="checkbox" name="batuk" value"1"> Batuk</td>
+                                        <td><input type="checkbox" name="pilek" value"1"> Pilek</td>
+                                        <td><input type="checkbox" name="suhu" value"1"> Suhu di atas 37&deg</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox" name="pusing" value"1"> Pusing</td>
+                                        <td><input type="checkbox" name="muntah" value"1"> Muntah</td>
+                                        <td> </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        <label class="col-md-2 control-label">Obat dan penanganan</label>
+                        <div class="col-md-10">
+                        <textarea class="form-control" rows="4" placeholder="Obat dan penanganan"></textarea>
+                        </div>
+
+                        <label class="col-md-2 control-label">Gejala Penyakit</label>
+                            <!------------------- Label -------------------->   
+                            <div class="col-md-5" overflow-y:auto;>
+                                <table class="table">
+                                    <tr>
+                                        <td><input type="radio" name="tingkat" value"1"> Ringan</td>
+                                        <td><input type="radio" name="tingkat" value"1"> Sedang</td>
+                                        <td><input type="radio" name="tingkat" value"1"> Berat</td>
+                                        <td><input type="radio" name="tingkat" value"1"> Parah</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!------------------- End of Label -------------------->
+                            <div class="col-md-12 btn-group"><button class="btn btn-primary pull-right" href="#">Submit</button></div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+            <!------------------------------------------- End ofContent ---------------------------------------------->|
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <<script src="../javascripts/jquery-2.1.1.min.js"></script>          <!-- javascript -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>           <!-- js bootstrap -->
+</body>
+
+</html>

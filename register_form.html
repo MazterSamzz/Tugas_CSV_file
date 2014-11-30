@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rumah Sehat Online</title>
+		<script src="javascripts/jquery-2.1.1.min.js"></script> 			<!-- javascript -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 	<!-- css bootstrap -->
+  		<script src="bootstrap/js/bootstrap.min.js"></script> 			<!-- js bootstrap -->
+  		<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<table class="banner">
+					<tr><td>Rumah Sehat Online</td></tr>
+			     </table>
+			</div>
+			<!-- Navigator Menu -->
+			<table class="col-md-12">
+				<tr><td class="col-md-3">
+				<ul class="nav nav-pills nav-justified">
+					<li class="active"><a href="#">10 Top Disease</a></li>
+					<li><a href="#">10 New Disease</a></li>
+					<li><a href="#">10 Top Doctor</a></li>
+				</ul>
+				</td>
+				<td class="col-md-9">
+				<ul class="nav nav-tabs">
+				   	<li><a href="index.html">Home</a></li>
+				   	<li><a href="cek_kesehatan.html">Cek Kesehatan</a></li>
+				   	<li class="active"><a href="login_dokter.html">Login Dokter</a></li>
+				   	<nav class="" role="navigation">
+						<form class="navbar-form navbar-right" role="search">
+					        <div class="form-group input-group-sm"><input type="text" class="form-control" placeholder="Search Penyakit"></div>
+					        <button type="submit" class="btn btn-default btn-sm">Submit</button>
+					    </form>
+			  		</nav>
+				</ul>
+				</td></tr>
+			</table>
+			<!-- End of Navigator Menu -->
+
+			<!----------------------------- Container ----------------------------->
+			<!-- Left Side -->
+				<table border="0" class="left_bar" id="left_bar">
+					<tr>
+						<td class="col-md-3">
+							<div id="left_title" class="left_bar_title">
+								10 Top Penyakit !!!
+							</div>
+							<div class="left_bar_text">
+								<ul><a href="#">Demam		<li>12/01/14</li></a></ul>
+								<ul><a href="#">DBD 		<li>13/01/14</li></a></ul>
+								<ul><a href="#">DBD			<li>14/01/14</li></a></ul>
+								<ul><a href="#">Jantung		<li>15/01/14</li></a></ul>
+								<ul><a href="#">Gagal Ginjal<li>16/01/14</li></a></ul>
+								
+								<ul><a href="#">Asma		<li>16/01/14</li></a></ul>
+								<ul><a href="#">Kencing batu<li>17/01/14</li></a></ul>
+								<ul><a href="#">Masuk angin	<li>18/01/14</li></a></ul>
+								<ul><a href="#">Tipes		<li>19/01/14</li></a></ul>
+								<ul><a href="#">Osteoporosis<li>20/01/14</li></a></ul>
+								<ul><a href="#">HIV			<li>21/01/14</li></a></ul>
+							</div>
+						</td>
+			<!-- End of Left Side -->
+			<!-- Right Side -->
+						<td class="col-md-9" valign="top">
+									<div class="box_login">
+										<!--Registration form-->
+									    <div>
+									          <h1 class="text-center">Register</h1>
+									    </div>
+									    <div>
+									        <form class="form-horizontal" action="register.php" method="post">
+									        	<div class="form-group"> <input type="text" class="form-control" placeholder="E-mail" name="email"> </div>
+									        	<div class="form-group"> <input type="text" class="form-control" placeholder="NID" name="nid"> </div>
+									            <div class="form-group"> <input type="text" class="form-control" placeholder="Username" name="username"> </div>
+									            <div class="form-group"> <input type="password" class="form-control" placeholder="Password" name="password"> </div>
+									            <div class="form-group"> <input type="password" class="form-control" placeholder="Confirm Password" name="password2"> </div>
+									            <div class="form-group"> <input type="text" class="form-control" placeholder="Tempat Praktek" name="tempat_praktek"> </div>
+									            <div class="form-group"> <button class="btn btn-primary pull-right" name="submit" value="submit">Register</button></div>
+									        </form>
+									    </div>
+									    <!-- End Registration form-->
+									</div>
+						</td>
+					</tr>
+			<!-- End of Right Side -->
+					<!-- Footer -->
+					<table class="col-md-12">
+						<tr><td><div  id="footer">Copy right by Ivan & Syailendra</div></td></tr>
+					</table>
+					<!-- End of Footer -->	
+				</table>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
