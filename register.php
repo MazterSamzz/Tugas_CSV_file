@@ -1,6 +1,6 @@
 <?php
 $file= fopen("Database Dokter.txt", "a+") or die("Unable to open file!");
-$txt = $_POST["email"]."; ".$_POST["nid"]."; ".$_POST["username"]."; ".$_POST["password"]."; ".$_POST["tempat_praktek"]."\n";
+$txt = $_POST["email"]."\n".$_POST["nid"]."\n".$_POST["username"]."\n".$_POST["password"]."\n".$_POST["tempat_praktek"]."\n";
 fwrite($file, $txt);
 fclose($file);
 ?>
